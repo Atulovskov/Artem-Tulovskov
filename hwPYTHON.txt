@@ -1,0 +1,72 @@
+№ 1
+phrase_1 = input()
+phrase_2 = input()
+if  len(phrase_1) > len(phrase_2):
+    print ('Фраза 1 длиннее фразы 2')
+elif len(phrase_1) < len(phrase_2):
+    print ('Фраза 2 длиннее фразы 1')
+elif len(phrase_1) == len(phrase_2):
+    print ('Фразы равной длины')
+
+
+№2
+year = int(input())
+if (year%4 == 0) and (year % 100!=0) or (year % 400 ==0):
+    print ('Високосный год')
+else:
+    print ('Обычный год')
+
+№ 3
+print('Введите день')
+a= int(input())
+print ('Введите месяц')
+b= input()
+if 24<=a<=31 and b==('Август') or 1<=a<=23 and b==('Сентябрь'):
+    print('Ваш знак зодиака: Дева')
+elif 24<=a<=30 and b==('Сентябрь') or 1<=a<=23 and b==('Октябрь'):
+    print ('Ваш знак зодиака: Весы')
+elif 24<=a<=31 and b==('Октябрь') or 1<=a<=22 and b==('Ноябрь'):
+    print ('Ваш знак зодиака: Скорпион')
+elif 23<=a<=30 and b==('Ноябрь') or 1<=a<=21 and b==('Декабрь'):
+    print ('Ваш знак зодиака: Стрелец')
+elif 22<=a<=31 and b==('Декабрь') or 1<=a<=20 and b==('Январь'):
+    print ('Ваш знак зодиака: Козерог')
+elif 21<=a<=31 and b==('Январь') or 1<=a<=18 and b==('Февраль'):
+    print ('Ваш знак зодиака: Водолей')
+elif 19<=a<=29 and b==('Февраль') or 1<=a<=20 and b==('Март'):
+    print ('Ваш знак зодиака: Рыбы')
+elif 21<=a<=31 and b==('Март') or 1<=a<=20 and b==('Апрель'):
+    print ('Ваш знак зодиака: Овен')
+elif 21<=a<=30 and b==('Апрель') or 1<=a<=21 and b==('Май'):
+    print ('Ваш знак зодиака: Телец')
+elif 22<=a<=31 and b==('Май') or 1<=a<=21 and b==('Июнь'):
+    print ('Ваш знак зодиака: Близнецы')
+elif 22<=a<=30 and b==('Июнь') or 1<=a<=22 and b==('Июль'):
+    print ('Ваш знак зодиака: Рак')
+elif 23<=a<=31 and b==('Июль') or 1<=a<=23 and b==('Август'):
+    print ('Ваш знак зодиака: Лев')
+
+№4
+width = int(input())
+length = int(input())
+height = int(input())
+if width<=15 and length <=15 and height <= 15:
+    print ('Коробка №1')
+elif 15<=width<=50 or 15<=length<=50 or 15<=height <= 50:
+    print ('Коробка №2')
+elif length>=2:
+    print ('Упаковка для лыж')
+else:
+    print('Стандартная коробка №3')
+№5
+x=int(input())
+a=x%10
+b=((x%100)//10)
+c=((x%1000)//100)
+g=(float(x//100000))
+y=((x//10000)%10)
+z=((x//1000)%10)
+if ((g+y+z)-(a+b+c))==0.0:
+    print ('Счастливый')
+else:
+    print('Обычный') 
